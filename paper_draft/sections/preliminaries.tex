@@ -1,0 +1,37 @@
+\section{Preliminaries}
+
+We begin by establishing notation and recalling some fundamental concepts from the theory of random matrix products.
+
+\begin{definition}
+Let $(\Omega, \mathcal{F}, \Prob)$ be a probability space and $T: \Omega \to \Omega$ a measurable transformation. A \emph{matrix cocycle} over $T$ is a measurable function $A: \Omega \to \GL(d,\R)$ such that the products
+\[
+A^n(\omega) = A(T^{n-1}\omega) \cdots A(T\omega)A(\omega)
+\]
+satisfy the cocycle property $A^{m+n}(\omega) = A^m(T^n\omega)A^n(\omega)$ for all $m,n \in \N$.
+\end{definition}
+
+\begin{definition}
+The \emph{top Lyapunov exponent} of a matrix cocycle $A$ is defined as
+\[
+\Lyap(A) = \lim_{n \to \infty} \frac{1}{n} \E[\log\norm{A^n(\omega)}]
+\]
+when this limit exists.
+\end{definition}
+
+\begin{example}
+Consider the case where $\{A_n\}$ are i.i.d. random matrices in $\SL(2,\R)$ with distribution $\mu$. Then $T$ is the shift operator on $\Omega = (\SL(2,\R))^\N$, and $A(\omega) = \omega_1$ defines a matrix cocycle. The classical theorem of Furstenberg asserts that if $\mu$ satisfies certain irreducibility conditions, then $\Lyap(A)$ exists and is strictly positive.
+\end{example}
+
+We will need the following fundamental result from multiplicative ergodic theory:
+
+\begin{theorem}[Oseledets Multiplicative Ergodic Theorem]
+Let $T$ be an ergodic measure-preserving transformation of $(\Omega,\mathcal{F},\Prob)$ and $A$ an integrable matrix cocycle with $\E[\log^+\norm{A}] < \infty$. Then there exist numbers $\lambda_1 > \lambda_2 > \cdots > \lambda_k$ and a measurable splitting
+\[
+\R^d = E_1(\omega) \oplus E_2(\omega) \oplus \cdots \oplus E_k(\omega)
+\]
+such that for almost every $\omega$,
+\[
+\lim_{n \to \infty} \frac{1}{n}\log\norm{A^n(\omega)v} = \lambda_i
+\]
+for all $v \in E_i(\omega) \setminus \{0\}$.
+\end{theorem}

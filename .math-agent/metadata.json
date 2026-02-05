@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-02-05T01:29:22.407Z",
+  "generator": "scibook-math-agent",
+  "version": "1.0.0",
+  "topic": "How can we analyze and compute Lyapunov exponents for random matrix products when the classical independence assumptions are relaxed?",
+  "title": "Ergodic Properties of Random Matrix Products and Applications to Lyapunov Exponents",
+  "tags": [
+    "dynamical-systems",
+    "ergodic-theory",
+    "random-matrices",
+    "lyapunov-exponents",
+    "probability"
+  ]
+}
