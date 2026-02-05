@@ -1,7 +1,14 @@
 % Paper-specific macros
-\newcommand{\GL}{\mathrm{GL}}
-\newcommand{\SL}{\mathrm{SL}}
-\newcommand{\Prob}{\mathbb{P}}
-\newcommand{\E}{\mathbb{E}}
-\newcommand{\Lyap}{\lambda}
-\newcommand{\Mat}{\mathrm{Mat}}
+% Using providecommand to avoid conflicts with math.tex
+
+% Common groups (not in math.tex)
+\providecommand{\GL}{\mathrm{GL}}
+\providecommand{\SL}{\mathrm{SL}}
+\providecommand{\SO}{\mathrm{SO}}
+\providecommand{\Sp}{\mathrm{Sp}}
+\providecommand{\Mat}{\mathrm{Mat}}
+\providecommand{\Lyap}{\lambda}
+
+% The following are already defined in math.tex, using providecommand as safety
+\providecommand{\Prob}{\mathbb{P}}
+\providecommand{\E}{\mathbb{E}}
